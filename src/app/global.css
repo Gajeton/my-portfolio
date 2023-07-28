@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* 
+@font-face {
+    font-family: 'RoclettePro';
+    src: url("./../../public/fonts/RoclettePro-Normal.woff2");
+}
+
+@font-face {
+    font-family: 'RoclettePro-Bold';
+    src: url("/public/fonts/RoclettePro-Bold.woff2");
+}
+
+@font-face {
+    font-family: 'ottenburgDisplay-Regular';
+    src: url("../../public/fonts/ottenburgDisplay-Regular.woff2");
+}
+@font-face {
+    font-family: 'ottenburgDisplay-SemiBold';
+    src: url("../../public/fonts/ottenburgDisplay-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: 'RocletteProSBoldItalic';
+    src: url("../../public/fonts/RocletteProItalic-SBoldItalic.woff2");
+} */
+
+/* 
+
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+@import 'additional-styles/theme.css';
+
+
+
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+[x-cloak=""] {
+    display: none;
+} */
