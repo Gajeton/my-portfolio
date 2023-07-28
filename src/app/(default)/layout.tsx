@@ -21,7 +21,7 @@ function handleMouseMove({ currentTarget, clientX, clientY }: MouseEvent) {
 }
 
 return (
-  <main className="">
+  <main>
     <div
       className="group relative w-full bg-[#D3D3D3] bg-gray-shadow-2xl"
       onMouseMove={handleMouseMove}
