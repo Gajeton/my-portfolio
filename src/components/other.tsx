@@ -29,7 +29,7 @@ export default function Other() {
   return (
     <section
       id="other-section"
-      className="max-w-screen-lg mx-auto  py-16 md:py-20 lg:py-28"
+      className="max-w-screen-lg mx-auto  md:py-14 relative"
     >
       <AnimatedTitle title="other."></AnimatedTitle>
       <div className="flex justify-between">

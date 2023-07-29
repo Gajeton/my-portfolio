@@ -2,10 +2,12 @@ import React from "react";
 import Link from "next/link";
 import styles from './styles.module.css'
 import AnimateCard from "../../shared/animated-card";
+import ScrollToTop from "react-scroll-to-top";
+import { MotionConfig, motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="md:max-w-screen-lg md:mx-auto">
+    <footer className="md:max-w-screen-lg md:mx-auto relative">
       <AnimateCard>
       <div className="py-4 md:py-6 ">
         <hr className="h-px mb-2 bg-black border-0"/>

@@ -25,7 +25,7 @@ export default function Header() {
   const [selected, setSelected] = useState(0);
 
   return (
-      <div className="flex flex-col font-rocletteBold text-2xl mt-[-5em}] leading-tight lowercase w-1/4">
+      <div className="flex flex-col font-rocletteBold text-2xl mt-[1em] leading-tight lowercase w-1/4">
           {navigation.map((el, i) => (
             <a
               href={el.href}

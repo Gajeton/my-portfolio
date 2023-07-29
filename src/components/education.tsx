@@ -8,7 +8,7 @@ import AnimatedTitle from "./shared/animated-title";
 export default function Education() {
   const educations = eudcation;
   return (
-    <section id="education-section" className=" md:max-w-screen-lg md:mx-auto py-16 md:py-20 lg:py-28">
+    <section id="education-section" className=" md:max-w-screen-lg md:mx-auto relative">
       <AnimatedTitle title="education."></AnimatedTitle>
       <div className="flex justify-between flex-wrap">
       {educations.map(x => {
