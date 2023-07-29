@@ -118,7 +118,7 @@ import AnimatedTitle from "./shared/animated-title"
     const experiences = experience;
     return (
       <>
-      <section id="experience-section" className=" md:max-w-screen-lg md:mx-auto py-16 md:py-20 lg:py-28">
+      <section id="experience-section" className=" md:max-w-screen-lg md:mx-auto md:py-14 relative">
         <AnimatedTitle title="experience."></AnimatedTitle>
         <div className="flex flex-col w-full  justify-center items-center space-y-7">
           {experiences.map((c, i) => (
