@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { ExploreFileProps } from "@/src/data";
 import File from "./file";
+import { motion } from "framer-motion";
 
 interface FolderProps {
     name: string;
@@ -31,12 +32,12 @@ const Folder = ({ children, name }: FolderProps) => {
             fileListing = <ul><li><em>Empty folder</em></li></ul>;
         }
     }
-    return <li>
+    return <motion.li initial={{opacity:0}} animate={{opacity:1, transition :{duration: 0.5}}}>
         <strong onClick={() => {
             setShowChildren(!showChildren);
         }}>{name}</strong>
         {showChildren && fileListing}
-    </li>;
+    </motion.li>;
 };
 
 export default Folder;

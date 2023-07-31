@@ -1,10 +1,11 @@
 'use client'
-import PhotoAntoine from '../../public/images/antoine-cv.jpg';
-import overlay from '../../public/images/overlay.jpeg';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import AnimateCard from './shared/animated-card';
-import Header from './ui/Header/header';
+import { useRef } from 'react';
+import AnimateCard from '../shared/animated-card';
+import Header from '../ui/Header/header';
+import PhotoAntoine from '../../../public/images/antoine-cv.jpg'
+import Image from 'next/image'
+
 export default function Hero() {
   const ref = useRef(null);
   let mouseX = useMotionValue(0);
@@ -22,10 +23,10 @@ export default function Hero() {
   }
 
   return (
-    <section id="summary-section" className="max-w-screen-lg mx-auto ">
+    <section id="summary-section" className="max-w-screen-lg mx-auto">
       <AnimateCard>
-        <div className="flex justify-between ">
-          <h2 className=" font-economicaBold text-4xl tracking-[.2em] text-white ">
+        <div className="flex justify-between">
+          <h2 className=" font-economicaBold resp:text-3xl text-4xl tracking-[.2em] text-white ">
             antoine familiar.
           </h2>
           <motion.button
@@ -42,13 +43,13 @@ export default function Hero() {
       </AnimateCard>
       <AnimateCard>
         <div className="flex flex-col">
-          <h1 className=" font-roclette tracking-[-.06em] leading-none lowercase text-7xl text-black md:w-1/2">
+          <h1 className=" font-roclette tracking-[-.06em] leading-none lowercase text-7xl resp:text-4xl text-black md:w-1/2">
             WEB FULLSTACK DEVELOPER / PROJECT MANAGER.
           </h1>
           <div className="flex justify-end md:mt-[-4em] md:ml-[2em] md:w-2/3 md:self-end">
             <div className="font-rocletteSBoldItalic w-full text-lg justify-end tracking-[.02em] text-black lowercase md:text-justify">
               <div
-                className="w-full group relative bg-[#D3D3D3] px-4 py-4"
+                className="w-full group relative bg-[#D3D3D3] px-4 mt-[-3px]"
                 onMouseMove={handleMouseMove}
               >
                 <motion.div
@@ -73,13 +74,11 @@ export default function Hero() {
                 apply my development skills to these new perspectives.
               </div>
             </div>
-            {/* <Image
-            className="picture"
+            <Image
             src={PhotoAntoine}
-            width={250}
-            height={200}
+            className="w-1/3 h-full"
             alt="CV"
-          /> */}
+          ></Image>
           </div>
           <Header />
         </div>

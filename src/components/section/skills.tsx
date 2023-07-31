@@ -1,10 +1,13 @@
 'use client'
 
-import { ExploreFileProps, exploreFile } from "../data"
-import CardFile from "./CardFile/card-file"
-import Roots from "./FileExplorer/roots"
-import AnimateCard from "./shared/animated-card"
-import AnimatedTitle from "./shared/animated-title"
+import { exploreFile } from "@/src/data";
+import CardFile from "../CardFile/card-file";
+import AnimatedTitle from "../shared/animated-title";
+import Roots from "../FileExplorer/roots";
+import AnimateCard from '../shared/animated-card';
+
+
+
 
 export default function Skills() {
 

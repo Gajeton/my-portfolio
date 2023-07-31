@@ -17,6 +17,11 @@ module.exports = {
       '6xl': '4rem',
       '7xl': '5rem',
     },
+    screens: {
+      'resp': {'max': '820px'},
+      // => @media (max-width: 820px) { ... }
+
+    },
     extend: {
       fontFamily: {
         roclette: ['var(--font-roclette)'],

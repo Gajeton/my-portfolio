@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    /* Your container needs a fixed height, and it 
+     * needs to be taller than your tallest column. */
+    height: 40em;
+
+    width: 100%;
+  }
+  
+  .item {
+    width: 49%;
+    /* Optional */
+    margin-bottom: 2%;
+    position: relative;
+  
+  }
+
+  
+  /* Re-order items into 3 rows */
+  .item:nth-child(odd) { order: 1; }
+  .item:nth-child(even) { order: 2; }
