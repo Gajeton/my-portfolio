@@ -119,12 +119,12 @@ export default function Experience() {
     <>
       <section
         id="experience-section"
-        className=" md:max-w-screen-lg md:mx-auto md:py-14 relative"
+        className="` md:py-14 relative"
       >
         <AnimatedTitle title="experience."></AnimatedTitle>
         <div className="flex flex-col w-full  justify-center items-center space-y-7">
           {experiences.map((c, i) => (
-            <AnimatedCard>
+            <AnimatedCard style="flex w-full">
             <ExperienceItem
               key={i}
               idItem={i}

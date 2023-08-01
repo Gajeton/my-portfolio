@@ -10,7 +10,7 @@ export default function Education() {
   return (
     <section id="education-section" className=" md:max-w-screen-lg md:mx-auto relative">
       <AnimatedTitle title="education."></AnimatedTitle>
-      <div className={`${styles.container}`}>
+      <div className={`${styles.container} resp:flex-col resp:w-full`}>
       {educations.map(x => {
         return (
           <AnimateCard style={`${styles.item}`}>

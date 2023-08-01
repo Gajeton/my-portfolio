@@ -28,7 +28,7 @@ function AnimatedTitle({title}: AnimatedTitleProps) {
           animate={controls}
           initial="hidden"
           variants={cardVariants}
-          className="text-black mb-4 font-rocletteBold text-3xl"
+          className="text-black mb-4 font-rocletteBold text-3xl resp:text-2xl resp:mt-4"
         >
         {title}
         </motion.h1>

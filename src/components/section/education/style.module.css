@@ -1,4 +1,5 @@
-.container {
+@media (min-width: 816px) {
+  .container {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
@@ -8,16 +9,37 @@
 
     width: 100%;
   }
-  
+
   .item {
     width: 49%;
     /* Optional */
     margin-bottom: 2%;
     position: relative;
-  
+
   }
 
-  
+
   /* Re-order items into 3 rows */
-  .item:nth-child(odd) { order: 1; }
-  .item:nth-child(even) { order: 2; }
+  .item:nth-child(odd) {
+    order: 1;
+  }
+
+  .item:nth-child(even) {
+    order: 2;
+  }
+
+}
+
+@media (max-width: 815px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .item {
+    margin: 0px 0px 0.8rem 0px;
+  }
+
+}

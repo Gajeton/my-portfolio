@@ -4,105 +4,32 @@ import { useState } from "react";
 import CardOther from "../../CardOther/card-other";
 import AnimatedTitle from "../../shared/animated-title";
 import OtherModal from "./other-modal";
+import AnimatedCard from "../../shared/animated-card";
 
 interface OtherItemProps {
   title:string
 }
 
-const OtherItem = ({ title }: OtherItemProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const containerVariants = {
-    hover: {
-      width: '100%',
-      heigth: 500,
-      transition: {
-        duration: 0.4,
-        type: "tween",
-        ease: "easeOut",
-      }
-    },
-  };
-  const parentsVariants = {
-    animate: {
-      zIndex: 1,
-      rotate: 0,
-      transition: {
-        type: "tween",
-        duration: 0.15,
-        ease: "circOut",
-      },
-    },
-    exit: {
-      zIndex: 0,
-      rotate: isOpen ? -90 : 90,
-      transition: {
-        type: "tween",
-        duration: 0.15,
-        ease: "circIn",
-      },
-    },
-    initial: {
-      rotate: isOpen ? -90 : 90,
-    },
-  };
-
-  const childVariants = {
-    animate: {
-      opacity: 1,
-      transition: {
-        opacity: {
-          duration: 0.25,
-          delay: 0.4,
-        },
-      },
-    },
-    exit: {
-      height: 0,
-      opacity: 0,
-      transition: {
-        height: {
-          duration: 0.4,
-        },
-        opacity: {
-          duration: 0.25,
-        },
-      },
-    },
-    initial: {
-      height: 0,
-      opacity: 0,
-    },
-  };
-
-  return (
-    <motion.div
-      className="bg-white relative"
-      whileHover="hover"
-      variants={containerVariants}
-      onMouseEnter={() => setIsOpen((prev) => !prev)}
-    >
-      <div className="flex justify-between items-center w-full ">
-        <div className="flex flex-col justify-start">
-          <motion.h1 className="font-roclette lowercase font-normal text-start text-6xl leading-[4rem]  text-black">
-            {title}
-          </motion.h1>
-        </div>
-      </div>
-    </motion.div>
-  );
-};
 
 export default function Other() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
 
-  const openModal = () => {
+  const openModal1 = () => {
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closeModal1 = () => {
     setIsModalOpen(false);
+  };
+
+  const openModal2 = () => {
+    setIsModalOpen2(true);
+  };
+
+  const closeModal2 = () => {
+    setIsModalOpen2(false);
   };
 
   const others = other; 
@@ -118,13 +45,36 @@ export default function Other() {
           <OtherItem title="academic project" data={others[0]} id={2} />
           
         </div> */}
-        <button
-          className=""
-          onClick={openModal}
-        >
-          <OtherItem title="podcast" />
-        </button>
-        {isModalOpen && <OtherModal label="podcast." data={others[1]} closeModal={closeModal} />}
+        <div className="flex">
+          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 mr-10 h-60">
+            <div onClick={openModal1} className="w-full flex justify-center">
+              <motion.h1 className="font-roclette lowercase font-normal text-start text-5xl leading-[4rem]  text-black">
+                podcast.
+              </motion.h1>
+            </div>
+          </AnimatedCard>
+          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 h-60">
+            <div onClick={openModal2} className="w-full flex justify-center">
+              <motion.h1 className="font-roclette lowercase font-normal text-start text-5xl leading-[4rem]  text-black">
+                academic project.
+              </motion.h1>
+            </div>
+          </AnimatedCard>
+        </div>
+        {isModalOpen && (
+          <OtherModal
+            label="podcast."
+            data={others[1]}
+            closeModal={closeModal1}
+          />
+        )}
+        {isModalOpen2 && (
+          <OtherModal
+            label="academic project."
+            data={others[0]}
+            closeModal={closeModal2}
+          />
+        )}
       </section>
     </>
   );

@@ -1,9 +1,5 @@
-import React from "react";
 import Link from "next/link";
-import styles from './styles.module.css'
 import AnimateCard from "../../shared/animated-card";
-import ScrollToTop from "react-scroll-to-top";
-import { MotionConfig, motion } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -45,7 +41,7 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-          <div className="flex space-x-2 text-sm align-center text-white">
+          <div className="flex space-x-2 text-sm resp:text-xs align-center text-white">
             <div>{` © ${new Date().getFullYear()}`}</div>
             <span>{` • `}</span>
             <span>  All Rights Reserved by Antoine Familiar</span>

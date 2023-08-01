@@ -25,7 +25,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="summary-section" className="max-w-screen-lg mx-auto">
+    <section id="summary-section">
       <AnimateCard>
         <div className="flex justify-between">
           <h2 className=" font-economicaBold resp:text-3xl text-4xl tracking-[.2em] text-white ">
@@ -50,7 +50,7 @@ export default function Hero() {
           </h1>
         </AnimateCard>
         <AnimateCard style='flex justify-end md:ml-[2em] md:mt-[-2em] md:w-[75%] md:self-end resp:mt-5 resp:flex resp:flex-col-reverse '>
-            <div className="font-rocletteSBoldItalic w-full text-lg  resp:text-sm justify-end self-center tracking-[.02em] text-black lowercase text-justify">
+            <div className="font-rocletteSBoldItalic w-full text-lg  resp:text-base justify-end self-center tracking-[.02em] text-black lowercase text-justify">
               <div
                 className="w-full group relative bg-[#D3D3D3] px-4 mt-[-3px]"
                 onMouseMove={handleMouseMove}

@@ -28,11 +28,9 @@ const Folder = ({ children, name }: FolderProps) => {
             })}
         </ul>;
 
-        if (!files.length) {
-            fileListing = <ul><li><em>Empty folder</em></li></ul>;
-        }
+       
     }
-    return <li key={name}>
+    return <li className="pl-4 text-2xl font-rocletteBold" key={name}>
         <strong onClick={() => {
             setShowChildren(!showChildren);
         }}>{name}</strong>

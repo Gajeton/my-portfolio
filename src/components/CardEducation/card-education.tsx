@@ -28,10 +28,10 @@ function CardEducation({content, title, subTitle}: CardEducationProps) {
   }, [controls, inView]);
 
   return (
-      <div className="flex-col md:p-12 bg-white text-black shadow-xl">
-        <h1 className="font-rocletteBold text-2xl text-black">{title}</h1>
-        <h2 className="font-economicaBold text-xl text-black ">{subTitle}</h2>
-        <ul className="list-disc font-economicaBold text-lg tracking-widest">
+      <div className="flex-col md:p-12 resp:py-4 resp:px-6 bg-white text-black shadow-xl">
+        <h1 className="font-rocletteBold text-2xl resp:text-xl text-black">{title}</h1>
+        <h2 className="font-economicaBold text-xl resp:text-lg text-black ">{subTitle}</h2>
+        <ul className="list-disc font-economicaBold text-lg tracking-widest pl-5q">
           {content.map((x) => (
             <li>{x}</li>
           ))}
