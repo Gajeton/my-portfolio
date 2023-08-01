@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Less, More } from "../shared/svg";
 import CardChildren from "../CardExperience/card-children";
 import AnimatedTitle from "../shared/animated-title";
+import AnimatedCard from "../shared/animated-card";
 
 
 
@@ -123,6 +124,7 @@ export default function Experience() {
         <AnimatedTitle title="experience."></AnimatedTitle>
         <div className="flex flex-col w-full  justify-center items-center space-y-7">
           {experiences.map((c, i) => (
+            <AnimatedCard>
             <ExperienceItem
               key={i}
               idItem={i}
@@ -130,6 +132,7 @@ export default function Experience() {
               subTitle={c.subTitle}
               children={c.children}
             />
+            </AnimatedCard>
           ))}
         </div>
       </section>
