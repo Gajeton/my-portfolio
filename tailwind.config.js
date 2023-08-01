@@ -17,10 +17,23 @@ module.exports = {
       '6xl': '4rem',
       '7xl': '5rem',
     },
-    screens: {
-      'resp': {'max': '820px'},
-      // => @media (max-width: 820px) { ... }
 
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+      'resp': {'max': '815px'},
     },
     extend: {
       fontFamily: {

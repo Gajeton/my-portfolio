@@ -32,7 +32,7 @@ export default function Hero() {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
-            className="bg-black text-white font-roclette lowercase text-sm flex mt-2"
+            className="bg-black text-white font-roclette lowercase text-sm flex "
           >
             <span className="self-center p-2 justify-start uppercase font-economicaBold">
               contact me.
@@ -41,13 +41,14 @@ export default function Hero() {
           {/* <div className="bg-black text-white font-roclette lowercase text-sm flex mt-2"></div> */}
         </div>
       </AnimateCard>
-      <AnimateCard>
-        <div className="flex flex-col">
-          <h1 className=" font-roclette tracking-[-.06em] leading-none lowercase text-7xl resp:text-4xl text-black md:w-1/2">
+      <div className="flex flex-col">
+        <AnimateCard>
+          <h1 className=" font-roclette tracking-[-.06em] leading-none lowercase text-7xl resp:text-5xl resp:mt-5 text-black md:w-1/2">
             WEB FULLSTACK DEVELOPER / PROJECT MANAGER.
           </h1>
-          <div className="flex justify-end md:mt-[-4em] md:ml-[2em] md:w-2/3 md:self-end">
-            <div className="font-rocletteSBoldItalic w-full text-lg justify-end tracking-[.02em] text-black lowercase md:text-justify">
+        </AnimateCard>
+        <AnimateCard style='flex justify-end md:ml-[2em] md:mt-[-2em] md:w-[75%] md:self-end resp:mt-5 resp:flex resp:flex-col-reverse '>
+            <div className="font-rocletteSBoldItalic w-full text-lg  resp:text-sm justify-end self-center tracking-[.02em] text-black lowercase text-justify">
               <div
                 className="w-full group relative bg-[#D3D3D3] px-4 mt-[-3px]"
                 onMouseMove={handleMouseMove}
@@ -74,14 +75,11 @@ export default function Hero() {
                 apply my development skills to these new perspectives.
               </div>
             </div>
-            <Image
-            src={PhotoAntoine}
-            className="w-1/3 h-full"
-            alt="CV"
-          ></Image>
-          </div>
-          <Header />
-        </div>
+            <Image src={PhotoAntoine} className="h-full  w-1/3  resp:w-1/2 resp:self-center resp:mb-4" alt="CV"></Image>
+        </AnimateCard>
+      </div>
+      <AnimateCard>
+        <Header />
       </AnimateCard>
     </section>
   );

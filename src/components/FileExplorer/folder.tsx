@@ -32,12 +32,12 @@ const Folder = ({ children, name }: FolderProps) => {
             fileListing = <ul><li><em>Empty folder</em></li></ul>;
         }
     }
-    return <motion.li initial={{opacity:0}} animate={{opacity:1, transition :{duration: 0.5}}}>
+    return <li key={name}>
         <strong onClick={() => {
             setShowChildren(!showChildren);
         }}>{name}</strong>
         {showChildren && fileListing}
-    </motion.li>;
+    </li>;
 };
 
 export default Folder;

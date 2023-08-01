@@ -15,7 +15,7 @@ export default function Skills() {
   return (
     <section
       id="skills-section"
-      className=" max-w-screen-lg mx-auto md:py-14 relative"
+      className=" max-w-screen-lg mx-auto md:py-14 resp:mt-5 relative"
     >
       <AnimatedTitle title="skills."></AnimatedTitle>
       <AnimateCard>
