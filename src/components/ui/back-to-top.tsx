@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import {AiOutlineArrowUp} from 'react-icons/ai'
 
 function BackToTop() {
+
+
+  const [matchSize, setmatchSize]  = useState(true)
   const [backToTop, setBackToTop]  = useState(false)
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -13,7 +16,7 @@ function BackToTop() {
             setBackToTop(false)
         }
     })
-       
+    setmatchSize(window.matchMedia('(min-width: 815px)').matches)
   }, [])
 
   function scrollUp() {
@@ -26,7 +29,7 @@ function BackToTop() {
   
   return (
     <>
-      {backToTop && (
+      {backToTop && matchSize && (
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.2 }}

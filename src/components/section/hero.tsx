@@ -34,19 +34,25 @@ export default function Hero() {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
-            className="bg-black text-white font-roclette lowercase text-sm flex "
+            data-tooltip-target="tooltip-default"
+            className="bg-black text-white font-roclette lowercase text-sm flex  "
           >
             <span className="self-center p-2 justify-start uppercase font-economicaBold">
               contact me.
             </span>
           </motion.button>
+          
+          <div id="tooltip-default" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+              Tooltip content
+              <div className="tooltip-arrow" data-popper-arrow></div>
+          </div>
           {/* <div className="bg-black text-white font-roclette lowercase text-sm flex mt-2"></div> */}
         </div>
       </AnimateCard>
       <div className="flex flex-col">
         <AnimateCard>
-          <h1 className=" font-roclette tracking-[-.06em] leading-none lowercase text-7xl resp:text-5xl resp:mt-5 text-black md:w-1/2">
-            WEB FULLSTACK DEVELOPER / PROJECT MANAGER.
+          <h1 className=" font-roclette tracking-[-.05em] leading-none lowercase text-7xl resp:text-5xl resp:mt-5 text-black md:w-1/2">
+            WEB FULLSTACK DEVELOPER/PROJECT MANAGER.
           </h1>
         </AnimateCard>
         <AnimateCard style='flex justify-end md:ml-[2em] md:mt-[-2em] md:w-[75%] md:self-end resp:mt-5 resp:flex resp:flex-col-reverse '>

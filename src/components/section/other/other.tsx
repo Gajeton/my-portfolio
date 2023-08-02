@@ -46,16 +46,16 @@ export default function Other() {
           
         </div> */}
         <div className="flex">
-          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 mr-10 h-60">
+          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 mr-10 h-60 resp:h-32">
             <div onClick={openModal1} className="w-full flex justify-center">
-              <motion.h1 className="font-roclette lowercase font-normal text-start text-5xl leading-[4rem]  text-black">
+              <motion.h1 className="font-roclette lowercase font-normal text-start text-5xl resp:text-2xl leading-[4rem]  text-black">
                 podcast.
               </motion.h1>
             </div>
           </AnimatedCard>
-          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 h-60">
+          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 h-60 resp:h-32">
             <div onClick={openModal2} className="w-full flex justify-center">
-              <motion.h1 className="font-roclette lowercase font-normal text-start text-5xl leading-[4rem]  text-black">
+              <motion.h1 className="font-roclette lowercase font-normal text-center text-5xl leading-[4rem] resp:leading-[1.2rem] resp:text-2xl  text-black">
                 academic project.
               </motion.h1>
             </div>
@@ -63,6 +63,7 @@ export default function Other() {
         </div>
         {isModalOpen && (
           <OtherModal
+            style="h-[90%]"
             label="podcast."
             data={others[1]}
             closeModal={closeModal1}
@@ -70,6 +71,7 @@ export default function Other() {
         )}
         {isModalOpen2 && (
           <OtherModal
+          style="h-fit"
             label="academic project."
             data={others[0]}
             closeModal={closeModal2}

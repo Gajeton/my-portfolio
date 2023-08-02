@@ -6,14 +6,15 @@ import { OtherProps, OthersProps } from '@/src/data';
 interface ModalProps {
     closeModal: () => void;
     data: OtherProps
-    label:string
+    label:string,
+    style:string
   }
 
 
 
   
 
-const OtherModal = ({ data, closeModal, label}: ModalProps) => {
+const OtherModal = ({ data, closeModal, label, style}: ModalProps) => {
 
 
   function formatlink({ title, link }: OtherProps): ReactNode {
@@ -34,20 +35,20 @@ const OtherModal = ({ data, closeModal, label}: ModalProps) => {
 
 
   return (
-    <motion.div
+    <motion.div onClick={closeModal}
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className="bg-white p-6  shadow-md w-2/3"
+        className={` bg-white p-6  shadow-md w-2/3 resp:w-[85%] resp:${style} resp:overflow-y-scroll resp:overflow-x-hidden`}
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: -50, opacity: 0 }}
       >
-        <h2 className="font-rocletteBold text-5xl mb-4">{label}</h2>
-        <ul className="list-disc text-2xl font-economicaBold">{formatlink(data)}</ul>
+        <h2 className="font-rocletteBold text-5xl mb-4 resp:text-2xl">{label}</h2>
+        <ul className="list-disc text-2xl resp:text-lg font-economicaBold">{formatlink(data)}</ul>
         <div className="flex justify-end mt-2">
           <button
             className=" bg-black mt-2 text-white px-2 py-2"

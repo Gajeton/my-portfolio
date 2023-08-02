@@ -33,7 +33,9 @@ const Folder = ({ children, name }: FolderProps) => {
     return <li className="pl-4 text-2xl font-rocletteBold" key={name}>
         <strong onClick={() => {
             setShowChildren(!showChildren);
-        }}>{name}</strong>
+        }}>{name}
+        <hr className="h-px my-1 w-[40%] bg-black border-0"/>
+        </strong>
         {showChildren && fileListing}
     </li>;
 };
