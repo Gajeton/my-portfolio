@@ -3,7 +3,7 @@ import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { useRef } from 'react';
 import AnimateCard from '../shared/animated-card';
 import Header from '../ui/Header/header';
-import PhotoAntoine from '../../../public/images/antoine-cv.jpg'
+import PhotoAntoine from '../../../static/public/images/antoine-cv.jpg'
 import Image from 'next/image'
 
 export default function Hero() {
