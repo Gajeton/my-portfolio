@@ -8,7 +8,7 @@ import styles from './style.module.css'
 export default function Education() {
   const educations = eudcation;
   return (
-    <section id="education-section" className=" md:max-w-screen-lg md:mx-auto relative">
+    <section id="education-section">
       <AnimatedTitle title="education."></AnimatedTitle>
       <div className={`${styles.container} resp:flex-col resp:w-full`}>
       {educations.map(x => {

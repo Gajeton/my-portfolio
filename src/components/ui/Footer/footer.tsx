@@ -11,7 +11,7 @@ export default function Footer() {
           <ul className="flex space-x-4">
             <li className="ml-4">
               <Link
-                href="https://github.com/Gajeton"
+                href="https://github.com/Gajeton/my-portofolio"
                 aria-label="Github"
                 className="flex justify-center items-center text-white bg-black hover:text-black hover:bg-white rounded-full transition duration-150 ease-in-out"
 

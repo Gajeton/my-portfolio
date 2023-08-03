@@ -31,16 +31,17 @@ export default function Hero() {
           <h2 className=" font-economicaBold resp:text-3xl text-4xl tracking-[.2em] text-white ">
             antoine familiar.
           </h2>
-          <motion.button
+          <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
             data-tooltip-target="tooltip-default"
             className="bg-black text-white font-roclette lowercase text-sm flex  "
+            href='#contact-section'
           >
             <span className="self-center p-2 justify-start uppercase font-economicaBold">
               contact me.
             </span>
-          </motion.button>
+          </motion.a>
           
           <div id="tooltip-default" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
               Tooltip content

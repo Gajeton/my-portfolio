@@ -37,14 +37,9 @@ export default function Other() {
     <>
       <section
         id="other-section"
-        className=" md:max-w-screen-lg md:mx-auto md:py-14 relative"
+        className=" md:max-w-screen-lg md:mx-auto"
       >
         <AnimatedTitle title="other."></AnimatedTitle>
-        {/* <div className="flex justify-between flex-wrap">
-          <OtherItem title="podcast" data={others[1]} id={1} />
-          <OtherItem title="academic project" data={others[0]} id={2} />
-          
-        </div> */}
         <div className="flex">
           <AnimatedCard style="flex bg-white justify-center items-center w-1/3 mr-10 h-60 resp:h-32">
             <div onClick={openModal1} className="w-full flex justify-center">

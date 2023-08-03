@@ -119,7 +119,7 @@ export default function Experience() {
     <>
       <section
         id="experience-section"
-        className="` md:py-14 relative"
+        className="md:py-14"
       >
         <AnimatedTitle title="experience."></AnimatedTitle>
         <div className="flex flex-col w-full  justify-center items-center space-y-7">

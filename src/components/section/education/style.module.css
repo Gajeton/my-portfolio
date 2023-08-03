@@ -5,7 +5,7 @@
     align-content: space-between;
     /* Your container needs a fixed height, and it 
      * needs to be taller than your tallest column. */
-    height: 40em;
+    height: 35em;
 
     width: 100%;
   }
