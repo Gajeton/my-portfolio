@@ -79,7 +79,7 @@ const Folder = ({ children, name }: FolderProps) => {
     }
     return (
       <li
-        className=" text-2xl font-rocletteBold"
+        className=" text-2xl font-rocletteBold pl-2"
         key={name}   
       >
         <AnimatePresence initial={false} mode="wait">
@@ -95,15 +95,7 @@ const Folder = ({ children, name }: FolderProps) => {
             >
               {showChildren ? <BsChevronDown /> : <BsChevronRight />}
             </motion.div>
-            <motion.div
-              key={showChildren ? "AiFillFolderOpen" : "AiFillFolder"}
-              initial="initial"
-              variants={parentsVariants}
-              animate="animate"
-              exit="exit"
-            >
-              {showChildren ? <AiFillFolderOpen /> : <AiFillFolder />}
-            </motion.div>
+
             <motion.strong key={name}>{name}</motion.strong>
           </div>
           {showChildren && fileListing}
