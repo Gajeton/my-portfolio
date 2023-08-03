@@ -462,7 +462,7 @@ export const experience: ExperienceProps[] = [
   {
     id: "developer",
     title: "web developer",
-    subTitle: "Lyon, nov. 2021 - jan. 2023 · 1 year 3 months",
+    subTitle: "Lyon, jan. 2019 - jan. 2023 · 4 year 1 months",
     children: [{
       title: "Development of a SpringBoot and Angular fullstack web application",
       subTitle: "Development of applications to manage claims files for a building insurance company",
