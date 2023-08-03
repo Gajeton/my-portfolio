@@ -17,7 +17,7 @@ export default function Project() {
   const project = projects
   return (
     <section id="project-section" className=" my-14">
-      <AnimatedTitle title="projcets."></AnimatedTitle>
+      <AnimatedTitle title="projects."></AnimatedTitle>
       <div className="flex justify-between flex-wrap">
       {project.map(res => {
         return (
