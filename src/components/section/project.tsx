@@ -18,7 +18,7 @@ export default function Project() {
   return (
     <section id="project-section" className=" my-14">
       <AnimatedTitle title="projcets."></AnimatedTitle>
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-wrap">
       {project.map(res => {
         return (
           <CardProject title={res.title} path={res.path} link={res.link} id={res.id} mainTech={res.mainTech}></CardProject>

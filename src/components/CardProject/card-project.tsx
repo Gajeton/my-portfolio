@@ -29,7 +29,7 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
     },
   };
   return (
-    <AnimateCard style="flex bg-white">
+    <AnimateCard style="flex bg-white resp:my-3">
       <AnimatePresence>
         <motion.div className="flex flex-col m-1">
           <div className="flex items-center justify-between">

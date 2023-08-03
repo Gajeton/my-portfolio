@@ -587,5 +587,6 @@ export const projects: ProjectProps[] = [
     link:"https://gajeton.github.io/my-portofolio/",
     path:"/images/portofolio.gif",
     mainTech:['/logo/next-js.svg', '/logo/tailwindcss.svg']
-  }
+  },
+
 ]
