@@ -29,8 +29,8 @@ const File = ({ name, logo, level }: FileProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 2 } }}
       >
-        <div className="flex items-center border-l-[1px] border-black w-full">
-          <div className="flex p-2  w-full">
+        <div className="flex items-center  w-full">
+          <div className="flex p-1  w-full">
             
             <li className="flex justify-between w-full items-center">
               
