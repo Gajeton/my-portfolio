@@ -37,7 +37,7 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
             <div className="flex items-center">
               {mainTech &&
                 mainTech.map((res) => {
-                  return <img alt="techno.name" src={res} className="p-1 w-8 h-8"></img>;
+                  return <Image alt="techno.name" width={32} height={32} src={res} className="p-1 w-8 h-8"></Image>;
                 })}
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
               variants={projectVariants}
             >
               <a href={link}>
-                <img src={path} className="w-[400px] h-64"/>
+                <Image alt="" src={path}  width={400} height={256}/>
               </a>
             </motion.div>
           </motion.div>
