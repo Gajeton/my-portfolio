@@ -34,7 +34,6 @@ export default function Hero() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
-            data-tooltip-target="tooltip-default"
             className="bg-black text-white font-roclette lowercase text-sm flex  "
             href='#contact-section'
           >

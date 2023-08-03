@@ -7,7 +7,7 @@ interface RootProps {
 }
 
 const Roots = ({files}: RootProps) => {
-    return <ul className="tree">
+    return <ul className="tree p-4 ">
         {files.map(root => {
             return <Folder name={root.title} children={root.children} />;
         })}

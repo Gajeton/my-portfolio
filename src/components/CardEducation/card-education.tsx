@@ -33,7 +33,7 @@ function CardEducation({content, title, subTitle}: CardEducationProps) {
         <h2 className="font-economicaBold text-xl resp:text-lg text-black ">{subTitle}</h2>
         <ul className="list-disc font-economicaBold text-lg tracking-widest pl-5q">
           {content.map((x) => (
-            <li>{x}</li>
+            <li key={x}>{x}</li>
           ))}
         </ul>
       </div>

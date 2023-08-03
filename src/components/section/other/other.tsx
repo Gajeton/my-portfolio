@@ -1,10 +1,9 @@
-import { OtherProps, OthersProps, other } from "@/src/data";
-import { AnimatePresence, motion } from "framer-motion";
+import { other } from "@/src/data";
+import { motion } from "framer-motion";
 import { useState } from "react";
-import CardOther from "../../CardOther/card-other";
+import AnimatedCard from "../../shared/animated-card";
 import AnimatedTitle from "../../shared/animated-title";
 import OtherModal from "./other-modal";
-import AnimatedCard from "../../shared/animated-card";
 
 interface OtherItemProps {
   title:string

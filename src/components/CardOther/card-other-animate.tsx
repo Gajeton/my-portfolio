@@ -52,7 +52,7 @@ const CardOtherAnimate = ({ className, isSecond=false, title, data}: CardOtherAn
      :
      <div>
         <ul>
-        {data.map(x => <li>{x}</li>)}
+        {data.map(x => <li key={x}>{x}</li>)}
         </ul>
      </div>
     }
