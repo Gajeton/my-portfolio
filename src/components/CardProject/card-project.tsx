@@ -29,23 +29,15 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
     },
   };
   return (
-    <AnimateCard style="flex bg-white resp:my-3">
+    <AnimateCard style="flex bg-white resp:my-3 w-[40%]">
       <AnimatePresence>
-        <motion.div className="flex flex-col m-1">
-          <div className="flex items-center justify-between">
+        <motion.div className="flex flex-col m-1 ">
+          <div className="flex items-center justify-between h-1/3">
             <h1 className="text-3xl font-rocletteBold p-1 ">{title}</h1>
             <div className="flex items-center">
               {mainTech &&
                 mainTech.map((res) => {
-                  return (
-                    <Image
-                      alt={res}
-                      src={res}
-                      width={30}
-                      height={30}
-                      className="p-1"
-                    ></Image>
-                  );
+                  return <img alt="techno.name" src={res} className="p-1 w-8 h-8"></img>;
                 })}
             </div>
           </div>
@@ -54,7 +46,6 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
             className="container-image relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-           
           >
             {isHovered && (
               <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center font-rocletteBold text-2xl">
@@ -68,7 +59,7 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
               variants={projectVariants}
             >
               <a href={link}>
-                <Image src={path} width={400} height={400}  alt={""}></Image>
+                <img src={path} className="w-[400px] h-64"/>
               </a>
             </motion.div>
           </motion.div>
