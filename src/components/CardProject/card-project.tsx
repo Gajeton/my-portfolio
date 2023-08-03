@@ -38,13 +38,13 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
               {mainTech &&
                 mainTech.map((res) => {
                   return (
-                    <img
+                    <Image
                       alt=""
                       src={res}
                       width={30}
                       height={30}
                       className="p-1"
-                    ></img>
+                    ></Image>
                   );
                 })}
             </div>
@@ -68,7 +68,7 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
               variants={projectVariants}
             >
               <a href={link}>
-                <img src={path} width={400} height={400} alt={""}></img>
+                <Image src={path} width={400} height={400}  alt={""}></Image>
               </a>
             </motion.div>
           </motion.div>
