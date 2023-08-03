@@ -39,7 +39,7 @@ export default function CardProject({ title, link, id, path, mainTech }: Project
                 mainTech.map((res) => {
                   return (
                     <Image
-                      alt=""
+                      alt={res}
                       src={res}
                       width={30}
                       height={30}
