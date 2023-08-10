@@ -41,7 +41,10 @@ const OtherModal = ({ data, closeModal, label, style}: ModalProps) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <motion.div
+      <motion.div  onClick={e => {
+          // do not close modal if anything inside modal content is clicked
+          e.stopPropagation();
+        }}
         className={` bg-white p-6  shadow-md w-2/3 resp:w-[85%] resp:${style} resp:overflow-y-scroll resp:overflow-x-hidden`}
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
