@@ -2,11 +2,11 @@ import { link } from "fs";
 import { Level } from "./level.enum";
 
 export interface ExploreFileProps {
-  id?:string;
-  title:string;
+  id?: string;
+  title: string;
   isFolder?: boolean,
-  level?:Level;
-  link?:string;
+  level?: Level;
+  link?: string;
   logo: string,
   children: ExploreFileProps[]
 }
@@ -609,21 +609,21 @@ export const exploreFile: ExploreFileProps[] = [
 
 export interface OthersProps {
   title: string
-  id:number
-  data:OtherProps
- }
+  id: number
+  data: OtherProps
+}
 
 
 export interface ExperienceProps {
-  id?:string;
+  id?: string;
   idItem?: number;
-  title:string;
+  title: string;
   subTitle: string;
   children: ExperienceChildContentProps[]
 }
 export interface ExperienceChildContentProps {
-  id?:string;
-  title?:string;
+  id?: string;
+  title?: string;
   subTitle?: string;
   content: string[]
 }
@@ -642,7 +642,7 @@ export const experience: ExperienceProps[] = [
       },
       {
         subTitle: "Management of corrective and evolutionary maintenance of an feedback application and an collective catering application",
-        content:[
+        content: [
           "Implementation of a support ticket system to manage requests and problems reported by users.",
           "Organization of weekly meetings with clients to discuss problems, developments and decisions to be made.",
           "Advice on good practices and help in making decisions regarding necessary developments.",
@@ -651,7 +651,7 @@ export const experience: ExperienceProps[] = [
       },
       {
         subTitle: "Management of corrective and evolutionary maintenance of an meidcal appointement application",
-        content:[
+        content: [
           "Redefinition of specifications with the client and simplification of IT concepts for non-specialized staff.",
           "Carrying out an analysis for the secure hosting of medical data in accordance with data protection regulations (Health Data Hosting - HDS).",
         ]
@@ -696,7 +696,7 @@ export const experience: ExperienceProps[] = [
       ]
     },
     {
-      title:"Service provider mission at EDF(Électricité de France) :",
+      title: "Service provider mission at EDF(Électricité de France) :",
       subTitle: "Maintenance, evolution and support of an application base developed in SpringBoot for the backend and Angular for the frontend.",
       content: [
         "Using the Git versioning tool with Gitlab to manage source code versions.",
@@ -708,7 +708,7 @@ export const experience: ExperienceProps[] = [
         "Animation of development workshops over several days with around ten participants, allowing knowledge sharing and improving skills in Angular and SpringBoot."
       ]
     },
-  ]
+    ]
   },
   {
     id: "intership",
@@ -717,8 +717,8 @@ export const experience: ExperienceProps[] = [
     children: [
       {
         content: [
-            ' 3 months : Full Stack Developer Intern at DEV3I: Developed a web application in .NET Core C# with Azure Functions (serverless) and Vue.js. Implemented authentication and APIs to manage software licenses sold to clients.',
-            ' 4 months : Full Stack Developer Intern at Entrust Datacard: Refactored a desktop application into a web application using Razor Pages .NET Framework.'
+          ' 3 months : Full Stack Developer Intern at DEV3I: Developed a web application in .NET Core C# with Azure Functions (serverless) and Vue.js. Implemented authentication and APIs to manage software licenses sold to clients.',
+          ' 4 months : Full Stack Developer Intern at Entrust Datacard: Refactored a desktop application into a web application using Razor Pages .NET Framework.'
         ]
       },
     ]
@@ -727,10 +727,10 @@ export const experience: ExperienceProps[] = [
 
 
 export interface EducationProps {
-  id?:string;
-  title:string;
+  id?: string;
+  title: string;
   subTitle: string;
-  content:string[];
+  content: string[];
 }
 
 export const eudcation: EducationProps[] = [
@@ -760,67 +760,65 @@ export const eudcation: EducationProps[] = [
 
 
 export interface OtherProps {
-  title:string[];
-  link?:string[]
+  title: { text: string, link?: string }[];
 }
 export const other: OtherProps[] = [
   {
-    title: ['Developed a one-page web platform for online games. Back-end: Spring, Java/Front-end: Jquery, Ajax, PHP, JavaScript, JSON', 'Final year project (GTA-like game) using Unity and C# language.'],
+    title: [{ text: 'Developed a one-page web platform for online games. Back-end: Spring, Java/Front-end: Jquery, Ajax, PHP, JavaScript, JSON' }, { text: 'Final year project (GTA-like game) using Unity and C# language.' }],
   }
-  ,{
-    title: ['DevOps: Impact on development projects?',
-            'Debunking 9 misconceptions about Agile methodology.',
-            'Is Spring Boot the best JAVA framework ?',
-            'Green IT: The status of sustainable computing.',
-            'Bug & Debug: Tools, methods, and developers advice.'
-          ],
-    link: ["https://podcast.ausha.co/axopen/devops-quels-impacts-sur-les-projets-de-developpement", "https://podcast.ausha.co/axopen/methode-agile-it-idees-recues","https://podcast.ausha.co/axopen/spring-boot-le-meilleur-framework-java", "https://podcast.ausha.co/axopen/green-it-ou-en-est-on-avec-l-informatique-durable", "https://podcast.ausha.co/axopen/bug-debug-outils-methodes-et-conseils-de-developpeurs"]
+  , {
+    title: [{ text: 'DevOps: Impact on development projects?', link: "https://podcast.ausha.co/axopen/devops-quels-impacts-sur-les-projets-de-developpement" },
+    { text: 'Debunking 9 misconceptions about Agile methodology.', link: "https://podcast.ausha.co/axopen/methode-agile-it-idees-recues" },
+    { text: 'Is Spring Boot the best JAVA framework ?', link: "https://podcast.ausha.co/axopen/spring-boot-le-meilleur-framework-java" },
+    { text: 'Green IT: The status of sustainable computing.', link: "https://podcast.ausha.co/axopen/green-it-ou-en-est-on-avec-l-informatique-durable" },
+    { text: 'Bug & Debug: Tools, methods, and developers advice.', link: "https://podcast.ausha.co/axopen/bug-debug-outils-methodes-et-conseils-de-developpeurs" },
+    ],
   }
 ]
 
 export interface ProjectProps {
-  id?:number;
-  title:string;
+  id?: number;
+  title: string;
   link?: string,
-  path?:string
-  mainTech?:MainTechProps[]
+  path?: string
+  mainTech?: MainTechProps[]
   release: boolean
 }
 
 export const projects: ProjectProps[] = [
   {
-    id:1,
-    title:"portofolio.",
-    link:"https://gajeton.github.io/my-portofolio/",
+    id: 1,
+    title: "portofolio.",
+    link: "https://gajeton.github.io/my-portofolio/",
     release: true,
-    path:"/my-portofolio/portofolio.gif",
-    mainTech:[{path : '/my-portofolio/next-js.svg', title: "nextjs"},{ path: '/my-portofolio/tailwindcss.svg', title:"tailwindcss"}]
+    path: "/my-portofolio/portofolio.gif",
+    mainTech: [{ path: '/my-portofolio/next-js.svg', title: "nextjs" }, { path: '/my-portofolio/tailwindcss.svg', title: "tailwindcss" }]
   },
 ]
 interface GitHubProjectsProps {
   id: number,
   link: string
   text: string,
-  mainTech : MainTechProps[]
+  mainTech: MainTechProps[]
 }
 
 export interface MainTechProps {
-  title:string,
-  path:string
+  title: string,
+  path: string
 }
 
 
 export const gitHubProjects: GitHubProjectsProps[] = [
   {
-    id:1,
-    link:"https://github.com/Gajeton/budget-backend",
+    id: 1,
+    link: "https://github.com/Gajeton/budget-backend",
     text: "budget-backend",
-    mainTech:[{path:'/my-portofolio/express-109.svg', title: "express"} , { path : '/my-portofolio/prisma-2.svg', title:"prisma"}]
+    mainTech: [{ path: '/my-portofolio/express-109.svg', title: "express" }, { path: '/my-portofolio/prisma-2.svg', title: "prisma" }]
   },
   {
-    id:2,
-    link:"https://github.com/Gajeton/budget-frontend",
+    id: 2,
+    link: "https://github.com/Gajeton/budget-frontend",
     text: "budget-frontend",
-    mainTech:[{path : '/my-portofolio/react-2.svg', title: "react"}, {path : '/my-portofolio/tailwindcss.svg', title: "tailwindcss"} ,{path: '/my-portofolio/axios.svg' ,  title : 'axios'}]
+    mainTech: [{ path: '/my-portofolio/react-2.svg', title: "react" }, { path: '/my-portofolio/tailwindcss.svg', title: "tailwindcss" }, { path: '/my-portofolio/axios.svg', title: 'axios' }]
   },
 ]

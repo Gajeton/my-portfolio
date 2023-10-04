@@ -31,7 +31,7 @@ function CardEducation({content, title, subTitle}: CardEducationProps) {
       <div className="flex-col md:p-12 resp:py-4 resp:px-6 bg-white text-black shadow-xl">
         <h1 className="font-rocletteBold text-2xl resp:text-xl text-black">{title}</h1>
         <h2 className="font-roclette text-xl resp:text-lg text-black ">{subTitle}</h2>
-        <ul className="list-disc font-roclette text-lg tracking-widest pl-5q">
+        <ul className="list-disc font-roclette text-lg tracking-normal pl-5q">
           {content.map((x) => (
             <li key={x}>{x}</li>
           ))}

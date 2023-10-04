@@ -2,6 +2,7 @@
 import React, { ReactNode } from 'react';
 import { m, motion } from 'framer-motion';
 import { OtherProps, OthersProps } from '@/src/data';
+import { text } from 'stream/consumers';
 
 interface ModalProps {
     closeModal: () => void;
@@ -16,18 +17,15 @@ interface ModalProps {
 
 const OtherModal = ({ data, closeModal, label, style}: ModalProps) => {
 
-
-  function formatlink({ title, link }: OtherProps): ReactNode {
-    return data.title.map((res) => {
-      if (data.link) {
-        return data.link.map((x) => {
-          return (<li className="ml-4">
-            {res}<a className='ml-2 text-sm font-roclette' href={x}>{x}</a>
-          </li>);
-        });
+  function formatlink(title: { text: string, link?: string }[]): ReactNode {
+    return title.map((res) => {
+      if (res.link) {
+        return (<li className="ml-4 text-2xl">
+            {res.text}<a className='ml-2 text-base font-roclette' href={res.link}>{res.link}</a>
+        </li>);
       } else {
         return <li className="ml-4">
-            {res}
+            {res.text}
           </li>
       }
     });
@@ -51,7 +49,7 @@ const OtherModal = ({ data, closeModal, label, style}: ModalProps) => {
         exit={{ y: -50, opacity: 0 }}
       >
         <h2 className="font-rocletteBold text-5xl mb-4 resp:text-2xl">{label}</h2>
-        <ul className="list-disc text-2xl resp:text-lg font-roclette">{formatlink(data)}</ul>
+        <ul className="list-disc text-2xl resp:text-lg font-roclette">{formatlink(data.title)}</ul>
         <div className="flex justify-end mt-2">
           <button
             className=" bg-black mt-2 text-white px-2 py-2"
