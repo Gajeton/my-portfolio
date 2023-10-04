@@ -18,7 +18,7 @@ export default function Skills() {
       className=" max-w-screen-lg mx-auto md:py-14 resp:mt-5 relative"
     >
       <AnimatedTitle title="skills."></AnimatedTitle>
-      <AnimateCard>
+      <AnimateCard id={5}>
         <CardFile>
           <Roots files={files} />
         </CardFile>

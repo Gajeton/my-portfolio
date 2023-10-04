@@ -51,7 +51,7 @@ const OtherModal = ({ data, closeModal, label, style}: ModalProps) => {
         exit={{ y: -50, opacity: 0 }}
       >
         <h2 className="font-rocletteBold text-5xl mb-4 resp:text-2xl">{label}</h2>
-        <ul className="list-disc text-2xl resp:text-lg font-economicaBold">{formatlink(data)}</ul>
+        <ul className="list-disc text-2xl resp:text-lg font-roclette">{formatlink(data)}</ul>
         <div className="flex justify-end mt-2">
           <button
             className=" bg-black mt-2 text-white px-2 py-2"

@@ -26,12 +26,12 @@ function CardExperience({data, mirror=false}: CardProps) {
         {/* <h1 className="font-roclette leading-[4rem] lowercase font-normal text-7xl mt-6 text-black">
           {data.title}
         </h1>*/}
-        <h2 className="font-economicaBold text-lg leading-none tracking-[0.2em] mt-6 text-black">
+        <h2 className="font-roclette text-lg leading-none tracking-[0.2em] mt-6 text-black">
           {data.subTitle}
         </h2> 
       </div>
       <div className="flex border-r-2 h-3/4 self-center ml-20 bg-black"></div>
-      <div className="mt-28 ml-20 mb-28 mr-16 text-xl leading-7 font-economicaBold">
+      <div className="mt-28 ml-20 mb-28 mr-16 text-xl leading-7 font-roclette">
         <CardChildren data={data.children} />
       </div>
     </div>
@@ -42,7 +42,7 @@ function CardExperience({data, mirror=false}: CardProps) {
       <div className="flex flex-col mr-6">
   
       <div className="flex border-r-2 h-3/4 self-center mr-20 bg-black"></div>
-      <div className="mt-28 mr-20 mb-28 ml-16 text-xl leading-7 font-economicaBold">
+      <div className="mt-28 mr-20 mb-28 ml-16 text-xl leading-7 font-roclette">
         <CardChildren data={data.children} />
       </div>
     </div>
@@ -71,7 +71,7 @@ function CardExperience({data, mirror=false}: CardProps) {
                 </motion.h1>
                 <motion.h2
                   layout="position"
-                  className="font-economicaBold text-lg leading-none tracking-[0.2em] mt-6 text-black"
+                  className="font-roclette text-lg leading-none tracking-[0.2em] mt-6 text-black"
                 >
                   {data.subTitle}
                 </motion.h2>
@@ -81,7 +81,7 @@ function CardExperience({data, mirror=false}: CardProps) {
                   className="bg-black text-white font-roclette lowercase text-sm flex m-4 "
                   onClick={() => setExpanded(!expanded)}
                 >
-                  <span className="self-center p-2 justify-start uppercase font-economicaBold">
+                  <span className="self-center p-2 justify-start uppercase font-roclette">
                     more details.
                   </span>
                 </motion.button>
@@ -96,7 +96,7 @@ function CardExperience({data, mirror=false}: CardProps) {
                   transition={{ duration: 1.2 }}
                   className="flex"
                 >
-                  <div className="text-xl leading-7 font-economicaBold">
+                  <div className="text-xl leading-7 font-roclette">
                     <CardChildren data={data.children} />
                   </div>
                 </motion.div>
@@ -110,7 +110,7 @@ function CardExperience({data, mirror=false}: CardProps) {
                 className="bg-black text-white font-roclette lowercase text-sm flex m-4"
                 onClick={() => setExpanded(!expanded)}
               >
-                <span className="self-center p-2 justify-start uppercase font-economicaBold">
+                <span className="self-center p-2 justify-start uppercase font-roclette">
                   more details.
                 </span>
               </motion.button>

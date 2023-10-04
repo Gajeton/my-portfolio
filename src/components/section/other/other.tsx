@@ -4,6 +4,7 @@ import { useState } from "react";
 import AnimatedCard from "../../shared/animated-card";
 import AnimatedTitle from "../../shared/animated-title";
 import OtherModal from "./other-modal";
+import { BsArrowUpRight } from "react-icons/bs";
 
 interface OtherItemProps {
   title:string
@@ -40,19 +41,21 @@ export default function Other() {
       >
         <AnimatedTitle title="other."></AnimatedTitle>
         <div className="flex">
-          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 mr-10 h-60 resp:h-32">
-            <div onClick={openModal1} className="w-full flex justify-center">
-              <motion.h1 className="font-roclette lowercase font-normal text-start text-5xl resp:text-2xl leading-[4rem]  text-black">
+          <AnimatedCard id={1} style="flex bg-white justify-center items-center w-1/3 mr-10 h-60 resp:h-32 ">
+            <button onClick={openModal1} className="w-full flex justify-center h-full ">
+              <motion.h1 className="  relative font-roclette lowercase font-normal text-start text-4xl resp:text-2xl leading-[4rem] self-center  text-black">
                 podcast.
               </motion.h1>
-            </div>
+              <BsArrowUpRight className="font-roclette lowercase font-normal text-center self-center text-3xl leading-[4rem] resp:leading-[1.2rem] resp:text-2xl  text-black"/>
+            </button>
           </AnimatedCard>
-          <AnimatedCard style="flex bg-white justify-center items-center w-1/3 h-60 resp:h-32">
-            <div onClick={openModal2} className="w-full flex justify-center">
-              <motion.h1 className="font-roclette lowercase font-normal text-center text-5xl leading-[4rem] resp:leading-[1.2rem] resp:text-2xl  text-black">
+          <AnimatedCard id={4} style="flex bg-white justify-center items-center w-1/3 h-60 resp:h-32" >
+            <button onClick={openModal2} className="flex justify-center h-full w-full">
+              <motion.h1 className="font-roclette lowercase font-normal text-center self-center text-4xl leading-[4rem] resp:leading-[1.2rem] resp:text-2xl  text-black">
                 academic project.
               </motion.h1>
-            </div>
+              <BsArrowUpRight className="font-roclette lowercase font-normal text-center self-center text-3xl leading-[4rem] resp:leading-[1.2rem] resp:text-2xl  text-black"/>
+            </button>
           </AnimatedCard>
         </div>
         {isModalOpen && (

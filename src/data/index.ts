@@ -636,26 +636,30 @@ export const experience: ExperienceProps[] = [
     children: [
       {
         content: [
-          "Drafted and presented commercial proposals, edited contracts, and estimated application costs.",
-          "Qualify customers by interviewing them to analyze their needs and propose appropriate solutions."
+          "Writing and presentation of commercial proposals, editing of contracts and estimation of application costs.",
+          "Qualification of customers through interviews to analyze their needs and propose suitable solutions."
         ]
       },
       {
-        subTitle: "Management of corrective and evolutionary application maintenance:",
+        subTitle: "Management of corrective and evolutionary maintenance of an feedback application and an collective catering application",
         content:[
-          "Implemented a support ticket system to handle requests and issues reported by users.",
-          "Organized weekly meetings with clients to discuss problems, developments, and decisions.",
-          "Provided advice on best practices and assisted in decision-making for necessary improvements.",
-          "Supervised development to ensure quality, compliance with specifications, and timely integration.",
-          "Managed the production deployment of new features or fixes.",
-          "Redefined the specifications with the client and simplified IT concepts for non-specialized personnel.",
-          "Conducted thorough analysis for secure hosting of medical data in compliance with data protection regulations (Health Data Hosting - HDS).",
+          "Implementation of a support ticket system to manage requests and problems reported by users.",
+          "Organization of weekly meetings with clients to discuss problems, developments and decisions to be made.",
+          "Advice on good practices and help in making decisions regarding necessary developments.",
+          "Supervision of developments to ensure their quality, compliance with specifications and their integration within the stipulated deadlines.",
+        ]
+      },
+      {
+        subTitle: "Management of corrective and evolutionary maintenance of an meidcal appointement application",
+        content:[
+          "Redefinition of specifications with the client and simplification of IT concepts for non-specialized staff.",
+          "Carrying out an analysis for the secure hosting of medical data in accordance with data protection regulations (Health Data Hosting - HDS).",
         ]
       },
       {
         content: [
-          "Implemented Agile methods for application evolutions using SCRUM or Kanban methodology to plan iterations and track progress.",
-          "Estimated developments and managed developer teams, coordinating schedules and task assignments to ensure timely delivery."
+          "Implementation of agile methods for application development phases, using the SCRUM or Kanban methodology to plan iterations and monitor progress.",
+          "Costing of developments and management of teams of developers, ensuring the coordination of schedules and the assignment of tasks to guarantee delivery within the set deadlines."
         ]
       },
     ]
@@ -665,42 +669,43 @@ export const experience: ExperienceProps[] = [
     title: "web developer",
     subTitle: "Lyon, jan. 2019 - jan. 2023 · 4 year 1 months",
     children: [{
-      title: "Development of a SpringBoot and Angular fullstack web application",
-      subTitle: "Development of applications to manage claims files for a building insurance company",
+      title: "Development of a fullstack SpringBoot and Angular web application:",
+      subTitle: "Development of claims management applications for a building insurance company.",
       content: [
-        "Using SpringBoot technologies for the backend and Angular for the frontend, with hosting on the Azure cloud.",
-        "Setting up APIs using Springboot and Hibernate to manage object retrieval from the PostgresSQL database",
-        "Feedback into the Azure AppInsight tool to analyse the performance (success, response times) of API requests",
-        "Implementation of recursion functionalities to retrieve customer files in the form of trees according to the type of claim",
-        "Teamwork to ensure effective collaboration and quality development",
-        "Agile environment, with regular iterations and internal code reviews."
+        "Use of SpringBoot technologies for the backend and Angular for the frontend, with hosting on the Azure cloud.",
+        "Implemented API using Springboot and Hibernate to manage object retrievals from the database.",
+        "Feeds information into the Azure AppInsight tool to analyze the performance (success, response time) of API requests",
+        "Using a PostgresSQL database",
+        "Implementation of recursion functionalities to retrieve customer files in the form of trees depending on the type of disaster.",
+        "Using the CSS Material Design framework for a modern user interface.",
+        "Teamwork to ensure effective collaboration and quality development.",
+        "Agile environment, with regular iterations and internal code reviews.",
       ]
     },
     {
       title: "Development of fullstack .NET Core and Angular web applications",
-      subTitle: "Sports event management application for the Sport dans la ville association and an application for financing low-carbon projects",
+      subTitle: "Sporting event management application for the Sport dans la ville Association and financing application for low-carbon projects.",
       content: [
         "Application development using .NET Core for the backend and Angular for the frontend, with hosting on the Azure cloud.",
-        "Using the CSS Material Design Framework to create modern interfaces",
-        "Use of the EntityFramework ORM to facilitate data access and management, with native SQL queries for specific operations.",
-        "Agile environment with short iterations, regular updates and integration of customer feedback at the end of each sprint",
-        "Implementation of continuous integration with automated build and deployment scripts via Gitlab CI/CD and Cloud provider Azure.",
-        "Agile environment, with regular iterations and internal code reviews",
-        "Presentation of progress to the customer at the end of the sprint and completion of recipes to integrate customer feedback into the current sprint."
+        "Using the CSS Material Design Framework to create modern interfaces.",
+        "Implemented recursion features to generate trees and retrieve all events and sub-events.",
+        "Using the EntityFramework ORM to facilitate data access and management, with native SQL queries for specific operations.",
+        "Agile environment with short iterations, regular updates and integration of customer feedback at the end of each sprint.",
+        "Implemented continuous integration with automated build and deployment scripts via Gitlab CI/CD and Azure cloud provider.",
+        "Presentation of progress to the client at the end of the sprint and creation of recipes to integrate customer feedback into the current sprint."
       ]
     },
     {
-      title:"Mission chez EDF :",
-      subTitle: "Maintained, evolved, and supported an application stack developed in Spring Boot for the backend and Angular for the frontend.",
+      title:"Service provider mission at EDF(Électricité de France) :",
+      subTitle: "Maintenance, evolution and support of an application base developed in SpringBoot for the backend and Angular for the frontend.",
       content: [
-        "Used Git versioning tool with Gitlab to manage source code versions.",
-        "Addition new components for SSO and LDAP authentication.",
-        "Implemented unit tests on the Angular frontend using Jasmine and Karma to ensure code quality.",
+        "Using the Git versioning tool with Gitlab to manage source code versions.",
+        "Added new bricks for SSO and LDAP authentication",
+        "Added unit testing to Angular frontend using Jasmine and Karma framework to ensure code quality.",
         "Maintained and supported deployment scripts using Ansible, with YAML scripting to facilitate application deployment and server configuration.",
-        "Use of the Jenkins platform for continuous integration, including build, unit test execution, and application deployment.",
-        "Formateur technique et support aux utilisateurs du socle applicatif, en utilisant un outil de ticketing tel que Jira et en participant à la refonte de la documentation technique via Confluence.",
-        "Présentation de l'avancement au client en fin de sprint et réalisation de recettes pour intégrer les retours clients dans le sprint en cours.",
-        "Animation d'ateliers de développement sur plusieurs jours avec une dizaine de participants, permettant un partage de connaissances et une amélioration des compétences en Angular et SpringBoot."
+        "Use of the Jenkins platform for continuous integration, including build, launch of unit tests and deployment of the application.",
+        "Technical training and support for users of the application base, using a ticketing tool such as Jira and participating in the overhaul of technical documentation via Confluence.",
+        "Animation of development workshops over several days with around ten participants, allowing knowledge sharing and improving skills in Angular and SpringBoot."
       ]
     },
   ]
@@ -731,8 +736,8 @@ export interface EducationProps {
 export const eudcation: EducationProps[] = [
   {
     id: "iut",
-    title: `DUT INFORMATIQUE`,
-    subTitle: " IUT Informatique Orleans, France, sept. 2018 - sept. 2018",
+    title: `Two-year technical degree`,
+    subTitle: " University Institute of Technology, France, sept. 2017 - sept. 2018",
     content: [
       `Learned languages and frameworks such as Java, Spring, JavaScript, HTML/CSS, Ajax, jQuery, C++, Python, PHP, and applied them in academic projects. `,
       `Theoretical exercise in Assembler`,
@@ -740,14 +745,14 @@ export const eudcation: EducationProps[] = [
   },
   {
     id: "sup",
-    title: `DUT INFORMATIQUE en année spéciale (1 an)`,
-    subTitle: " Private School of Computer Science Orleans, France, nov. 2015 - sept. 2018",
+    title: `Two-year technical degree`,
+    subTitle: "Private School of Computer Science Orleans, France, nov. 2015 - sept. 2017",
     content: [
     ],
   },
   {
     id: "bac",
-    title: `BAC STI2D SIN`,
+    title: `Baccalaureat STI2D SIN`,
     subTitle: "Lycée Saint Croix Saint Euverte Orleans, France, sept. 2014 - sept. 2015",
     content: [],
   },
@@ -769,7 +774,7 @@ export const other: OtherProps[] = [
             'Green IT: The status of sustainable computing.',
             'Bug & Debug: Tools, methods, and developers advice.'
           ],
-    link: ["https://www.google.fr/", "https://www.augoutdemma.be/88960-itineraire-japon-3-semaines"]
+    link: ["https://podcast.ausha.co/axopen/devops-quels-impacts-sur-les-projets-de-developpement", "https://podcast.ausha.co/axopen/methode-agile-it-idees-recues","https://podcast.ausha.co/axopen/spring-boot-le-meilleur-framework-java", "https://podcast.ausha.co/axopen/green-it-ou-en-est-on-avec-l-informatique-durable", "https://podcast.ausha.co/axopen/bug-debug-outils-methodes-et-conseils-de-developpeurs"]
   }
 ]
 
@@ -777,8 +782,9 @@ export interface ProjectProps {
   id?:number;
   title:string;
   link?: string,
-  path:string
-  mainTech?:string[]
+  path?:string
+  mainTech?:MainTechProps[]
+  release: boolean
 }
 
 export const projects: ProjectProps[] = [
@@ -786,8 +792,35 @@ export const projects: ProjectProps[] = [
     id:1,
     title:"portofolio.",
     link:"https://gajeton.github.io/my-portofolio/",
+    release: true,
     path:"/my-portofolio/portofolio.gif",
-    mainTech:['/my-portofolio/next-js.svg', '/my-portofolio/tailwindcss.svg']
+    mainTech:[{path : '/my-portofolio/next-js.svg', title: "nextjs"},{ path: '/my-portofolio/tailwindcss.svg', title:"tailwindcss"}]
   },
+]
+interface GitHubProjectsProps {
+  id: number,
+  link: string
+  text: string,
+  mainTech : MainTechProps[]
+}
 
+export interface MainTechProps {
+  title:string,
+  path:string
+}
+
+
+export const gitHubProjects: GitHubProjectsProps[] = [
+  {
+    id:1,
+    link:"https://github.com/Gajeton/budget-backend",
+    text: "budget-backend",
+    mainTech:[{path:'/my-portofolio/express-109.svg', title: "express"} , { path : '/my-portofolio/prisma-2.svg', title:"prisma"}]
+  },
+  {
+    id:2,
+    link:"https://github.com/Gajeton/budget-frontend",
+    text: "budget-frontend",
+    mainTech:[{path : '/my-portofolio/react-2.svg', title: "react"}, {path : '/my-portofolio/tailwindcss.svg', title: "tailwindcss"} ,{path: '/my-portofolio/axios.svg' ,  title : 'axios'}]
+  },
 ]

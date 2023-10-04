@@ -5,6 +5,7 @@
 import Contact from '@/src/components/section/contact'
 import Education from '@/src/components/section/education/education'
 import Experience from '@/src/components/section/experience'
+import Github from '@/src/components/section/github'
 import Hero from '@/src/components/section/hero'
 import Other from '@/src/components/section/other/other'
 import Project from '@/src/components/section/project'
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Project />
+      <Github />
       <Experience />
       <Education />
       <Other />

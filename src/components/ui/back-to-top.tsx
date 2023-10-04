@@ -36,7 +36,7 @@ function BackToTop() {
           className="bg-black text-white  font-roclette lowercase text-sm flex justify-center mt-2 fixed right-12 bottom-12 h-10 w-10 resp:h-4 resp:w-4"
           onClick={() => scrollUp()}
         >
-          <span >
+          <span>
             <AiOutlineArrowUp size={40} />
           </span>
         </motion.button>

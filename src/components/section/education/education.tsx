@@ -13,7 +13,7 @@ export default function Education() {
       <div className={`${styles.container} resp:flex-col resp:w-full`}>
       {educations.map(x => {
         return (
-          <AnimateCard style={`${styles.item}`}>
+          <AnimateCard id={6} style={`${styles.item}`}>
             <CardEducation
               title={x.title}
               subTitle={x.subTitle}

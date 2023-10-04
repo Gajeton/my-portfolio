@@ -4,7 +4,7 @@ import AnimateCard from "../../shared/animated-card";
 export default function Footer() {
   return (
     <footer className="md:max-w-screen-lg md:mx-auto">
-      <AnimateCard>
+      <AnimateCard id={7}>
       <div className="py-4 md:py-6 ">
         <hr className="h-px mb-2 bg-black border-0"/>
         <div className="flex flex-row-reverse justify-center items-center mt-4">

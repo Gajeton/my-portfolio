@@ -5,30 +5,29 @@ import { EventHandler, MouseEventHandler, useState } from 'react';
 
 export default function Header() {
   interface NavigationItem {
+    id:number
     name: string;
     href: string;
     current: boolean;
   }
 
   const navigation: NavigationItem[] = [
-    { name: "Summary.", href: "#summary-section", current: false },
-    { name: "Skills.", href: "#skills-section", current: false },
-    { name: "Experience.", href: "#experience-section", current: false },
-    { name: "Education.", href: "#education-section", current: false },
-    { name: "Other.", href: "#other-section", current: false },
+    { id: 1, name: "Summary.", href: "#summary-section", current: false },
+    { id: 2, name: "Skills.", href: "#skills-section", current: false },
+    { id: 3, name: "Projects.", href: "#project-section", current: false },
+    { id: 4, name: "Ongoing project.", href: "#ongoing-section", current: false },
+    { id: 5, name: "Experience.", href: "#experience-section", current: false },
+    { id: 6, name: "Education.", href: "#education-section", current: false },
+    { id: 7, name: "Other.", href: "#other-section", current: false },
   ];
 
-  function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(" ");
-  }
-
-  const [selected, setSelected] = useState(0);
 
   return (
-      <div className="flex md:flex-col font-rocletteBold text-2xl md:mt-[-2em] md:leading-tight lowercase md:w-1/4 resp:px-2 resp:text-lg resp:justify-between resp:mt-5">
+      <div className="flex md:flex-col font-rocletteBold text-2xl md:mt-[-1em] md:leading-tight lowercase md:w-1/4 resp:px-2 resp:text-lg resp:justify-between resp:mt-5">
           {navigation.map((el, i) => (
             <a
               href={el.href}
+              key={el.id}
               className={`${style.hover_underline_animation}`}>
               {el.name}
               </a>

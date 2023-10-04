@@ -1,13 +1,8 @@
 'use client'
 
 import { projects } from "@/src/data";
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import AnimateCard from '../shared/animated-card';
-import AnimatedTitle from "../shared/animated-title";
-import Image from 'next/image'
-import { BsArrowUpRight } from "react-icons/bs";
 import CardProject from "../CardProject/card-project";
+import AnimatedTitle from "../shared/animated-title";
 
 
 
@@ -21,7 +16,7 @@ export default function Project() {
       <div className="flex justify-between flex-wrap resp:flex-col resp:items-center">
       {project.map(res => {
         return (
-          <CardProject title={res.title} path={res.path} link={res.link} id={res.id} mainTech={res.mainTech}></CardProject>
+          <CardProject release={res.release} title={res.title} path={res.path} link={res.link} id={res.id} mainTech={res.mainTech}></CardProject>
         );
       })}
       </div>

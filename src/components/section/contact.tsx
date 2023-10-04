@@ -15,12 +15,12 @@ export default function Contact() {
   return (
     <section id="contact-section" className=" my-14">
       <AnimatedTitle title="contact."></AnimatedTitle>
-      <AnimateCard style="bg-white">
+      <AnimateCard style="bg-white" id={11}>
         <div className="font-roclette text-2xl  resp:p-2 md:p-6 w-full flex justify-center flex-wrap">
           <h1 className="md:flex  items-center">
             you can contact me on{" "}
             <a
-              className="bg-black text-white mx-2 flex items-center text-xl font-economicaBold"
+              className="bg-black text-white mx-2 flex items-center text-xl font-roclette"
               type="email"
               href="mailto: antoine.familiar@gmail.com"
             >
@@ -29,7 +29,7 @@ export default function Contact() {
             </a>{" "}
             on{" "}
             <a
-              className="bg-black text-white mx-2 flex items-center text-xl font-economicaBold"
+              className="bg-black text-white mx-2 flex items-center text-xl font-roclette"
               href="https://linkedin.com/in/antoine-familiar"
               type="text"
             >
@@ -38,7 +38,7 @@ export default function Contact() {
             </a>{" "}
             or on{" "}
             <a
-              className="bg-black text-white mx-2 flex items-center text-xl font-economicaBold"
+              className="bg-black text-white mx-2 flex items-center text-xl font-roclette"
               type="text"
               href="https://github.com/gajeton"
             >

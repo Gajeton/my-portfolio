@@ -87,7 +87,7 @@ const Folder = ({ children, name }: FolderProps) => {
           setShowChildren(!showChildren);
         }}>
             <motion.div
-              key={showChildren ? "BsChevronDown" : "BsChevronRight"}
+              key={name}
               initial="initial"
               variants={arrowVariants}
               animate="animate"

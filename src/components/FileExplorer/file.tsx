@@ -48,7 +48,7 @@ const File = ({ name, logo, level }: FileProps) => {
                 })}>{level}</div>
                         
             </li>
-            <a className="flex items-center" type="text" href="https://www.google.com"><FaGithubSquare /></a>
+            {/* <a className="flex items-center" type="text" href="https://www.google.com"><FaGithubSquare /></a> */}
 
           </div>
         </div>

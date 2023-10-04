@@ -103,7 +103,7 @@ const ExperienceItem = (props: ExperienceProps) => {
             className="flex"
             variants={childVariants}
           >
-            <div className=" text-xl leading-7 font-economicaBold m-4">
+            <div className=" text-xl leading-7 font-roclette m-4">
               <CardChildren data={props.children} />
             </div>
           </motion.div>
@@ -124,7 +124,7 @@ export default function Experience() {
         <AnimatedTitle title="experience."></AnimatedTitle>
         <div className="flex flex-col w-full  justify-center items-center space-y-7">
           {experiences.map((c, i) => (
-            <AnimatedCard style="flex w-full">
+            <AnimatedCard id={2} style="flex w-full">
             <ExperienceItem
               key={i}
               idItem={i}

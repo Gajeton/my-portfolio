@@ -8,8 +8,9 @@ import { EducationProps, ExperienceProps } from "@/src/data";
 type AnimatedCardProps = {
     children: ReactNode,
     style?: string,
+    id:number | string
 } 
-function AnimatedCard({ children, style=""}: AnimatedCardProps) {
+function AnimatedCard({ children, style="" , id}: AnimatedCardProps) {
   const cardVariants = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0.8 }
@@ -31,6 +32,7 @@ function AnimatedCard({ children, style=""}: AnimatedCardProps) {
         initial="hidden"
         variants={cardVariants}
         className={style}
+        key={id}
       > 
         {children}
       </motion.div>
