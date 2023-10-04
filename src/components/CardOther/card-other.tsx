@@ -23,7 +23,7 @@ const CardOther = ({isSecond=false, data}: CardOtherPops) => {
         <div>
           <ul>
             {data.title.map((res) => (
-              <li key={res}>{res}</li>
+              <li key={res.text}>{res.text}</li>
             ))}
           </ul>
         </div>
