@@ -692,19 +692,19 @@ export const experience: ExperienceProps[] = [
         "Using the EntityFramework ORM to facilitate data access and management, with native SQL queries for specific operations.",
         "Agile environment with short iterations, regular updates and integration of customer feedback at the end of each sprint.",
         "Implemented continuous integration with automated build and deployment scripts via Gitlab CI/CD and Azure cloud provider.",
-        "Presentation of progress to the client at the end of the sprint and creation of recipes to integrate customer feedback into the current sprint."
+        "Presenting sprint progress to the client at the end of the sprint and incorporating customer feedback into the ongoing sprint."
       ]
     },
     {
       title: "Service provider mission at EDF(Électricité de France) :",
-      subTitle: "Maintenance, evolution and support of an application base developed in SpringBoot for the backend and Angular for the frontend.",
+      subTitle: "Maintenance, evolution and support of an application starter developed in SpringBoot for the backend and Angular for the frontend.",
       content: [
         "Using the Git versioning tool with Gitlab to manage source code versions.",
         "Added new bricks for SSO and LDAP authentication",
         "Added unit testing to Angular frontend using Jasmine and Karma framework to ensure code quality.",
         "Maintained and supported deployment scripts using Ansible, with YAML scripting to facilitate application deployment and server configuration.",
         "Use of the Jenkins platform for continuous integration, including build, launch of unit tests and deployment of the application.",
-        "Technical training and support for users of the application base, using a ticketing tool such as Jira and participating in the overhaul of technical documentation via Confluence.",
+        "Technical training and support for users of the application starter, using a ticketing tool such as Jira and participating in the overhaul of technical documentation via Confluence.",
         "Animation of development workshops over several days with around ten participants, allowing knowledge sharing and improving skills in Angular and SpringBoot."
       ]
     },
