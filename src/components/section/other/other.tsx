@@ -60,7 +60,7 @@ export default function Other() {
         </div>
         {isModalOpen && (
           <OtherModal
-            style="h-[90%]"
+            style="h-[90%] resp:h-[70%]"
             label="podcast."
             data={others[1]}
             closeModal={closeModal1}

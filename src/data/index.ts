@@ -636,22 +636,23 @@ export const experience: ExperienceProps[] = [
     children: [
       {
         content: [
-          "Writing and presentation of commercial proposals, editing of contracts and estimation of application costs.",
-          "Qualification of customers through interviews to analyze their needs and propose suitable solutions."
+          "Writing and presenting commercial proposals, editing contracts, and estimating application costs.",
+          "Qualifying customers through interviews to analyze their needs and proposing suitable solutions."
         ]
       },
       {
         subTitle: "Management of corrective and evolutionary maintenance of an feedback application and an collective catering application",
         content: [
-          "Implementation of a support ticket system to manage requests and problems reported by users.",
-          "Organization of weekly meetings with clients to discuss problems, developments and decisions to be made.",
+          "Implementing a support ticket system to manage user-reported requests and problems.",
+          "Organization of weekly meetings with clients to discuss problems, developments, and decisions to be made.",
           "Advice on good practices and help in making decisions regarding necessary developments.",
-          "Supervision of developments to ensure their quality, compliance with specifications and their integration within the stipulated deadlines.",
+          "Supervision of developments to ensure their quality, compliance with specifications, and their integration within the stipulated deadlines.",
         ]
       },
       {
         subTitle: "Management of corrective and evolutionary maintenance of an meidcal appointement application",
         content: [
+
           "Redefinition of specifications with the client and simplification of IT concepts for non-specialized staff.",
           "Carrying out an analysis for the secure hosting of medical data in accordance with data protection regulations (Health Data Hosting - HDS).",
         ]
@@ -672,39 +673,52 @@ export const experience: ExperienceProps[] = [
       title: "Development of a fullstack SpringBoot and Angular web application:",
       subTitle: "Development of claims management applications for a building insurance company.",
       content: [
-        "Use of SpringBoot technologies for the backend and Angular for the frontend, with hosting on the Azure cloud.",
-        "Implemented API using Springboot and Hibernate to manage object retrievals from the database.",
+        "Use of SpringBoot technologies for the backend and Angular for the frontend, with hosting on the Azure cloud",
+        "Implemented API using Springboot and Hibernate to manage object retrievals from the database",
         "Feeds information into the Azure AppInsight tool to analyze the performance (success, response time) of API requests",
         "Using a PostgresSQL database",
-        "Implementation of recursion functionalities to retrieve customer files in the form of trees depending on the type of disaster.",
-        "Using the CSS Material Design framework for a modern user interface.",
-        "Teamwork to ensure effective collaboration and quality development.",
-        "Agile environment, with regular iterations and internal code reviews.",
+        "Implementation of recursion functionalities to retrieve customer files in the form of trees depending on the type of disaster",
+        "Using the CSS Material Design framework for a modern user interface",
+        "Teamwork to ensure effective collaboration and quality development",
+        "Agile environment, with regular iterations and internal code reviews",
       ]
     },
     {
       title: "Development of fullstack .NET Core and Angular web applications",
       subTitle: "Sporting event management application for the Sport dans la ville Association and financing application for low-carbon projects.",
       content: [
-        "Application development using .NET Core for the backend and Angular for the frontend, with hosting on the Azure cloud.",
-        "Using the CSS Material Design Framework to create modern interfaces.",
-        "Implemented recursion features to generate trees and retrieve all events and sub-events.",
-        "Using the EntityFramework ORM to facilitate data access and management, with native SQL queries for specific operations.",
-        "Agile environment with short iterations, regular updates and integration of customer feedback at the end of each sprint.",
-        "Implemented continuous integration with automated build and deployment scripts via Gitlab CI/CD and Azure cloud provider.",
-        "Presenting sprint progress to the client at the end of the sprint and incorporating customer feedback into the ongoing sprint."
+       
+"Application development using .NET Core for the backend and Angular for the frontend, with hosting on the Azure cloud",
+
+"Using the CSS Material Design Framework to create modern interfaces",
+
+"Implemented recursion features to generate trees and retrieve all events and sub-events",
+
+"Using the EntityFramework ORM to facilitate data access and management, with native SQL queries for specific operations",
+
+"Agile environment with short iterations, regular updates, and integration of customer feedback at the end of each sprint",
+
+"Implemented continuous integration with automated build and deployment scripts via Gitlab CI/CD and Azure cloud provider",
+
+"Presenting sprint progress to the client at the end of the sprint and incorporating customer feedback into the ongoing sprint"
       ]
     },
     {
       title: "Service provider mission at EDF(Électricité de France) :",
       subTitle: "Maintenance, evolution and support of an application starter developed in SpringBoot for the backend and Angular for the frontend.",
       content: [
-        "Using the Git versioning tool with Gitlab to manage source code versions.",
+        "Using the Git versioning tool with Gitlab to manage source code versions",
+
         "Added new bricks for SSO and LDAP authentication",
-        "Added unit testing to Angular frontend using Jasmine and Karma framework to ensure code quality.",
-        "Maintained and supported deployment scripts using Ansible, with YAML scripting to facilitate application deployment and server configuration.",
-        "Use of the Jenkins platform for continuous integration, including build, launch of unit tests and deployment of the application.",
-        "Technical training and support for users of the application starter, using a ticketing tool such as Jira and participating in the overhaul of technical documentation via Confluence.",
+        
+        "Added unit testing to Angular frontend using Jasmine and Karma framework to ensure code quality",
+        
+        "Maintained and supported deployment scripts using Ansible, with YAML scripting to facilitate application deployment and server configuration",
+        
+        "Use of the Jenkins platform for continuous integration, including build, launch of unit tests and deployment of the application",
+        
+        "Technical training and support for users of the application starter, using a ticketing tool such as Jira, and participating in the overhaul of technical documentation via Confluence",
+        
         "Animation of development workshops over several days with around ten participants, allowing knowledge sharing and improving skills in Angular and SpringBoot."
       ]
     },
