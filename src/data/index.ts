@@ -758,17 +758,17 @@ export const eudcation: EducationProps[] = [
     ],
   },
   {
+    id: "bac",
+    title: `Baccalaureat STI2D SIN`,
+    subTitle: "Lycée Saint Croix Saint Euverte Orleans, France, sept. 2014 - sept. 2015",
+    content: [],
+  },
+  {
     id: "sup",
     title: `Two-year technical degree, Computer Science`,
     subTitle: "Private School of Computer Science Orleans, France, nov. 2015 - sept. 2017",
     content: [
     ],
-  },
-  {
-    id: "bac",
-    title: `Baccalaureat STI2D SIN`,
-    subTitle: "Lycée Saint Croix Saint Euverte Orleans, France, sept. 2014 - sept. 2015",
-    content: [],
   },
 ];
 
