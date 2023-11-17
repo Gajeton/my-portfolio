@@ -750,7 +750,7 @@ export interface EducationProps {
 export const eudcation: EducationProps[] = [
   {
     id: "iut",
-    title: `Two-year technical degree`,
+    title: `Two-year technical degree, Computer Science`,
     subTitle: " University Institute of Technology, France, sept. 2017 - sept. 2018",
     content: [
       `Learned languages and frameworks such as Java, Spring, JavaScript, HTML/CSS, Ajax, jQuery, C++, Python, PHP, and applied them in academic projects. `,
@@ -759,7 +759,7 @@ export const eudcation: EducationProps[] = [
   },
   {
     id: "sup",
-    title: `Two-year technical degree`,
+    title: `Two-year technical degree, Computer Science`,
     subTitle: "Private School of Computer Science Orleans, France, nov. 2015 - sept. 2017",
     content: [
     ],
