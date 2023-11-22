@@ -16,7 +16,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/my-portofolio",
+  basePath: "/my-portoflio",
 
   /**
    * Disable server-based image optimization. Next.js does not support
