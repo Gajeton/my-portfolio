@@ -802,11 +802,11 @@ export interface ProjectProps {
 export const projects: ProjectProps[] = [
   {
     id: 1,
-    title: "portofolio.",
-    link: "https://gajeton.github.io/my-portofolio/",
+    title: "portfolio.",
+    link: "https://gajeton.github.io/my-portfolio/",
     release: true,
-    path: "/my-portofolio/portofolio.gif",
-    mainTech: [{ path: '/my-portofolio/next-js.svg', title: "nextjs" }, { path: '/my-portofolio/tailwindcss.svg', title: "tailwindcss" }]
+    path: "/my-portfolio/portfolio.gif",
+    mainTech: [{ path: '/my-portfolio/next-js.svg', title: "nextjs" }, { path: '/my-portfolio/tailwindcss.svg', title: "tailwindcss" }]
   },
 ]
 interface GitHubProjectsProps {
@@ -827,12 +827,12 @@ export const gitHubProjects: GitHubProjectsProps[] = [
     id: 1,
     link: "https://github.com/Gajeton/budget-backend",
     text: "budget-backend",
-    mainTech: [{ path: '/my-portofolio/express-109.svg', title: "express" }, { path: '/my-portofolio/prisma-2.svg', title: "prisma" }]
+    mainTech: [{ path: '/my-portfolio/express-109.svg', title: "express" }, { path: '/my-portfolio/prisma-2.svg', title: "prisma" }]
   },
   {
     id: 2,
     link: "https://github.com/Gajeton/budget-frontend",
     text: "budget-frontend",
-    mainTech: [{ path: '/my-portofolio/react-2.svg', title: "react" }, { path: '/my-portofolio/tailwindcss.svg', title: "tailwindcss" }, { path: '/my-portofolio/axios.svg', title: 'axios' }]
+    mainTech: [{ path: '/my-portfolio/react-2.svg', title: "react" }, { path: '/my-portfolio/tailwindcss.svg', title: "tailwindcss" }, { path: '/my-portfolio/axios.svg', title: 'axios' }]
   },
 ]
